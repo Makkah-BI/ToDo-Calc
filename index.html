@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Phase 1 · To-Do List + Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- ========== TO-DO LIST APP ========== -->
+      <div class="card">
+        <h2>To‑Do List</h2>
+        <div class="todo-input-group">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Write a new task..."
+            autocomplete="off"
+          />
+          <button id="addTaskBtn">Add</button>
+        </div>
+        <button id="deleteAllBtn" class="delete-all-btn">Delete all</button>
+        <ul id="todoListContainer" class="todo-list"></ul>
+      </div>
+
+      <!-- ========== CALCULATOR ========== -->
+      <div class="card calculator">
+        <h2 style="border-left-color: #f59e0b; color: #0f172a">Calculator</h2>
+        <div class="calc-display" id="calcDisplay">0</div>
+        <div class="calc-buttons" id="calcButtons">
+          <!-- dynamic generation via JS but also static fallback -->
+        </div>
+        <div
+          style="
+            font-size: 0.75rem;
+            margin-top: 0.8rem;
+            text-align: center;
+            color: #94a3b8;
+          "
+        ></div>
+      </div>
+      <footer>
+        <i>
+          Phase 1 · localStorage persists tasks · Calculator with keyboard &
+          click</i
+        >
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
